@@ -2,7 +2,7 @@
 using namespace std;
 class BarquitosRC { //Me creo la clase BarquitosRC
 private: // Atributos privados, porque solo se pueden acceder desde la clase. NO los puedes modificar si no cumples el objetivo de la clase.
-    std::string nombre;
+    string nombre;
     int velocidad;
     int distanciaRecorrida;
     int nitro;
@@ -13,20 +13,20 @@ public: //Estos Metodos publicos, son la parte de la classe que se puede modific
     BarquitosRC(std::string pNombre);
 
     // getters Son atributopublicos que sirven para modificar Atributos privados, pero sin necesidad de acceder a ellos directamente.
-    std::string getNombre();
+    string getNombre();
     int getVelocidad();
     int getDistanciaRecorrida();
     int getNitro();
 
-    // setters Son métodos públicos que permiten modificar el valor de un atributo privado de una clase. 
+    // setters Son mÃ©todos pÃºblicos que permiten modificar el valor de un atributo privado de una clase. 
     void setNombre(std::string pNombre);
     void setVelocidad(int pVelocidad);
     void setDistanciaRecorrida(int pDistanciaRecorrida);
     void setNitro(int pNitro);
-    /*los getters se utilizan para acceder a la información de una clase,
-     mientras que los setters se utilizan para modificar la información de una clase.*/
+    /*los getters se utilizan para acceder a la informaciÃ³n de una clase,
+     mientras que los setters se utilizan para modificar la informaciÃ³n de una clase.*/
     
-    // otros métodos
+    // otros mÃ©todos
     void calcularDistanciaRecorrida();
     void usarNitro();
 };
